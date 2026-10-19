@@ -1,0 +1,20 @@
+# Keep private source material, credentials and review exports out of Git.
+.env
+.env.*
+!.env.example
+*.private.*
+*.pdf
+*.docx
+*.xlsx
+*.psd
+*.psb
+*.zip
+review/
+previews/
+private/
+node_modules/
+__pycache__/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.log
