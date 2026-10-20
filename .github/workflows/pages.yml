@@ -26,7 +26,7 @@ jobs:
         run: node --check site/app.js
 
   deploy:
-    if: github.event_name != 'pull_request'
+    if: github.event_name != 'pull_request' && vars.ENABLE_PAGES_DEPLOY == 'true'
     needs: validate
     runs-on: ubuntu-latest
     permissions:

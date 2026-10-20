@@ -17,5 +17,7 @@ This is the canonical, permanent source repository for Cynthia's portfolio websi
 - For layout or interaction changes, inspect desktop and mobile previews and test affected behavior. Disclose limits if browser QA is unavailable.
 - The user wants future approved website changes reflected on GitHub and the fixed website link. When a remote and authenticated access have been configured, commit and push approved changes as part of delivery; report any authentication failure instead of claiming synchronization.
 - Do not force-push, rewrite published history or overwrite unrelated user edits.
-- Deployment is configured by `.github/workflows/pages.yml` for pushes to `main`; GitHub Pages must first be enabled for this repository using GitHub Actions.
+- Deployment is configured by `.github/workflows/pages.yml` for pushes to `main`; GitHub Pages must first be enabled using GitHub Actions, and the repository variable `ENABLE_PAGES_DEPLOY` must be set to `true` after the user confirms the publication audience. Without it only validation runs.
 - Before first publication, confirm the chosen GitHub repository and audience with the user. The local workflow configuration is not evidence of a completed online deployment.
+- Remote: `https://github.com/CynthiaCake/CynthiaResume.git`. Original remote README and history were preserved by merging, not force-pushing.
+- In this task environment the inherited loopback proxy was unavailable and Windows SChannel failed. A working temporary Git invocation used `-c http.proxy= -c https.proxy= -c http.sslBackend=openssl`. TLS verification remains enabled. Prefer process-scoped overrides; do not change the user's global proxy or disable certificate checks.

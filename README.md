@@ -1,4 +1,6 @@
-# Cynthia 作品集网站
+# CynthiaResume
+
+Cynthia的作品集
 
 这是钟晓楠作品集的固定代码仓库。后续网站修改统一在这里进行，不再维护多个同名版本。
 
@@ -6,7 +8,7 @@
 
 本地目录：`C:\Users\Administrator\Documents\Codex\cynthia-portfolio`
 
-GitHub远程地址：尚未绑定。在线作品集地址：尚未部署。
+GitHub远程地址：https://github.com/CynthiaCake/CynthiaResume 。在线作品集地址：尚未部署。
 
 ## 文件结构
 
@@ -28,8 +30,9 @@ scripts/
 
 1. 创建或选定一个属于自己的GitHub仓库，将地址提供给协助维护网站的人。不要提供密码或令牌。
 2. 连接远程并完成首次推送。现有仓库如有内容，先检查再合并，不强制覆盖。
-3. 在仓库Settings → Pages中，将Source选为GitHub Actions。
-4. 在Actions中等待发布工作流成功；使用GitHub实际返回的Pages网址作为作品集链接。
+3. 确认网站的公开范围后，在仓库Settings → Pages中，将Source选为GitHub Actions。
+4. 在Settings → Secrets and variables → Actions → Variables中添加仓库变量ENABLE_PAGES_DEPLOY，值设为true。该开关默认关闭；确认前只检查代码，不发布网站。
+5. 手动运行发布工作流或再次推送；等待发布成功，使用GitHub实际返回的Pages网址作为作品集链接。
 
 免费账户通常需要公开仓库才能使用GitHub Pages；私人仓库是否支持取决于账户计划。首次发布前应确认源代码、联系方式和作品的公开范围。
 
